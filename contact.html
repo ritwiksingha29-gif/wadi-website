@@ -1,1 +1,156 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Contact Form</title>\n</head>\n<body>\n    <h1>Contact Us</h1>\n    <form action="mailto:wadialnaam786@gmail.com" method="post" enctype="text/plain">\n        <label for="name">Name:</label><br>\n        <input type="text" id="name" name="name" required><br><br>\n        <label for="email">Email:</label><br>\n        <input type="email" id="email" name="email" required><br><br>\n        <label for="cv">Upload CV:</label><br>\n        <input type="file" id="cv" name="cv" accept="application/pdf,.doc,.docx" required><br><br>\n        <input type="submit" value="Submit">\n    </form>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - WADI Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>WADI Solutions</h1>
+            </div>
+            <nav class="nav">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:wadialnaam786@gmail.com">wadialnaam786@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+971503904905">+971 50 390 4905</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/971503904905" target="_blank">+971 50 390 4905</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <h2>Send us a Message</h2>
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cv">Upload CV (Optional)</label>
+                        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+                        <small>Accepted formats: PDF, DOC, DOCX (Max 5MB)</small>
+                    </div>
+
+                    <button type="submit" class="submit-button">Send Message</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section class="careers-section" id="careers">
+        <div class="container">
+            <h2>Join Our Team</h2>
+            <p>We're always looking for talented professionals to join WADI Solutions. If you're passionate about business excellence and want to grow with us, we'd love to hear from you!</p>
+            
+            <div class="careers-grid">
+                <div class="career-card">
+                    <h3>Business Consultant</h3>
+                    <p>Full-time | Senior Level</p>
+                    <p>We're seeking experienced business consultants to drive client success.</p>
+                </div>
+                <div class="career-card">
+                    <h3>Project Manager</h3>
+                    <p>Full-time | Mid Level</p>
+                    <p>Lead our project execution teams and ensure client satisfaction.</p>
+                </div>
+                <div class="career-card">
+                    <h3>Business Analyst</h3>
+                    <p>Full-time | Entry Level</p>
+                    <p>Analyze business processes and provide insights for improvement.</p>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 40px; font-weight: bold;">Submit your CV and application using the contact form above!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p>Email: <a href="mailto:wadialnaam786@gmail.com">wadialnaam786@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+971503904905">+971 50 390 4905</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <a href="https://wa.me/971503904905" class="whatsapp-link" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 WADI Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
