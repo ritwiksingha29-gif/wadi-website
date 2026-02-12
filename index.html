@@ -3,45 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Business Website</title>
+    <title>WADI Solutions - Business Excellence</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Add your styles here */
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #333; color: #fff; padding: 10px 0; text-align: center; }
-        nav a { margin: 0 15px; color: white; text-decoration: none; }
-        .hero {
-            height: 80vh;
-            background-image: url('your-background-image.jpg');
-            background-size: cover;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-        }
-        .cta-button { background: #ff5722; color: white; padding: 10px 20px; border: none; cursor: pointer; }
-        footer { text-align: center; padding: 20px 0; }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </nav>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>WADI Solutions</h1>
+            </div>
+            <nav class="nav">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html#careers">Careers</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero">
-        <h1>Welcome to Our Business</h1>
-        <button class="cta-button">Get Started</button>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to WADI Solutions</h1>
+            <p class="hero-subtitle">Delivering Excellence in Business Solutions</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
+        </div>
+        <div class="hero-overlay"></div>
     </section>
 
-    <footer>
-        <p>Contact us: info@example.com</p>
-        <p>WhatsApp: <a href="https://wa.me/1234567890">Chat with us</a></p>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Business Consulting</h3>
+                    <p>Expert guidance to transform your business operations and maximize growth.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Strategic Planning</h3>
+                    <p>Comprehensive strategies tailored to achieve your business objectives.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Implementation</h3>
+                    <p>Seamless execution of strategies with proven methodologies and expertise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>WADI Solutions is committed to delivering exceptional business consulting services. With years of industry experience, we help organizations achieve their strategic goals through innovative solutions and expert guidance.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p>Email: <a href="mailto:wadialnaam786@gmail.com">wadialnaam786@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+971503904905">+971 50 390 4905</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <a href="https://wa.me/971503904905" class="whatsapp-link" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 WADI Solutions. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
